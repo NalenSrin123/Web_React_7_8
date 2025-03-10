@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Online Store</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Images/logoHeader.webp" alt="">
+        </div>
+        <div class="search">
+            <input type="search" name="" id="" placeholder="Search...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li class="drop"><a href="#">Air jordans</a>
+                <div class="drop-down">
+                    <ul>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Styles</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">Kids</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Nike</a></li>
+            <li class="drop"><a href="#"> Adidas</a>
+                <div class="drop-down">
+                    <ul>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Styles</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">Kids</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Yeezy</a></li>
+            <li><a href="#"> More sneakers</a></li>
+            <li><a href="#">New releases</a></li>
+            <li><a href="#">Price drops</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="slide">
+            <div class="left">
+                <div data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                   
+                    data-aos-duration="2000">
+                    <h1>Be trendy and <br>in style!</h1>
+                <p>Explore the latest shoes  for every sport, workout and everyday look. Built for ultimate performance and sneaker style, Nike shoes for men deliver cutting-edge technologies specific to your sport in iconic designs.</p>
+            </div>
+                
+            <div data-aos="fade-up">
+                <button title="Shop Now">SHOP NOW</button>
+            </div>
+                
+            </div>
+            <div class="right">
+                <img src="Images/banner.jpg" alt="" title="Banner">
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="top-content">
+            <div class="text">
+                <h1>Choose category</h1>
+            </div>
+            <article>
+                <div class="card">
+                    <div class="image">
+                        <img src="/Images/s1.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        <h5>SHOP</h5>
+                        <h2>AIR JORDANS</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="/Images/s2.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        <h5>SHOP</h5>
+                        <h2>AIR JORDANS</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="/Images/s3.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        <h5>SHOP</h5>
+                        <h2>AIR JORDANS</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="/Images/s1.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        <h5>SHOP</h5>
+                        <h2>AIR JORDANS</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="/Images/s1.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        <h5>SHOP</h5>
+                        <h2>AIR JORDANS</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="/Images/s1.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        <h5>SHOP</h5>
+                        <h2>AIR JORDANS</h2>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="bottom-content">
+            <p>From spin to yoga to everyday wear, shop sneakers featuring signature styles and footwear technologies. Whether it be the iconic Air Force 1 or latest VaporMax, find the pairs that align with your unique style.</p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    window.addEventListener("scroll", function() {
+    const navbar = document.querySelector("nav");
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
+AOS.init();
+</script>
